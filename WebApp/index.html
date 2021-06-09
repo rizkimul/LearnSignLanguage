@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language App</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">MACMAN</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="dark.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+        
+        <div class="text">
+            <h2>Welcome to Our</h2>
+            <h3>Application Sign Language Detection</h3>
+            <p>This website (application) for help someone to translated sign from who people can't speak and we have some cheatsheet for you who want learn Sign Language</p>
+            <a href="detection.html">Try It</a>
+        </div>
+
+        <ul class="medias">
+            <li><a href="#"><i class="fa fa-instagram" style="font-size:50px"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp" style="font-size:50px"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" style="font-size:50px"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" style="font-size:50px"></i></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="detection.html">Detection</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>

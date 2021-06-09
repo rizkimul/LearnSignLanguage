@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language App</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo"></h2>
+            <div class="toggle"></div>
+        </header>
+        
+        <div class="text">
+            <h2>Sign Language</h2>
+            <p>Sign languages are languages that use the visual-manual modality to convey meaning. Sign languages are expressed through manual articulations in combination with non-manual elements. Sign languages are full-fledged natural languages with their own grammar and lexicon. Sign languages are not universal and they are not mutually intelligible with each other, although there are also striking similarities among sign languages. Sign language should not be confused with body language, a type of nonverbal communication.</p>
+            <p>The image below is a form of the hand form of the sign language that our application uses.</p>
+            <img src="amer_sign2.png" alt="pic" class="image">
+            <a href="https://en.wikipedia.org/wiki/Sign_language">Visit this site to known more</a>
+            <a href="detection.html">Try It</a>
+            <br/><br/><br/><br/>
+        </div>
+
+        <ul class="medias">
+            <li><a href="#"><i class="fa fa-instagram" style="font-size:50px"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp" style="font-size:50px"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" style="font-size:50px"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook" style="font-size:50px"></i></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="modul.html">Modul</a></li>
+            <li><a href="detection.html">Detection</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>
