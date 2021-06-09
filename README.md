@@ -1,4 +1,4 @@
-#LearnSignLanguage Documentation
+# LearnSignLanguage Documentation
 1. Download dataset from Kaggle(Sign Language MNIST)
 2. Split dataset into train and validation directory
 3. Batching training and validation data using train generator
